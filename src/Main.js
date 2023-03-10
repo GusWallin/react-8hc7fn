@@ -2,6 +2,8 @@ import React from 'react';
 import Filmcard from './Filmcard';
 
 export default function Main(props) {
+
+
   const filmElements = props.films.map((film) => {
     return (
       <Filmcard
@@ -32,11 +34,6 @@ export default function Main(props) {
       <button type="submit">SEARCH</button>
       <section>
         {filmElements}
-        {/* <Filmcard
-          title={title[0]}
-          crawl={crawl[0]}
-          releaseDate={releaseDate[0]}
-        /> */}
       </section>
     </div>
   );
